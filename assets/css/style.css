@@ -1,5 +1,3 @@
-
-
 #map {
   height: 100%;
 }
@@ -20,7 +18,7 @@ table {
 #listing {
   position: absolute;
   top: 116px;
-  left:26px;
+  left: 26px;
   bottom: 40px;
   width: 335px;
   overflow: auto;
@@ -52,14 +50,16 @@ table {
   border-radius: 4px;
   border: none;
 }
+
 ::placeholder {
   color: #000;
 }
 
 input[type="text"]:focus {
-  border:none;
+  border: none;
   outline-color: #cd0000;
 }
+
 .placeIcon {
   width: 20px;
   height: 34px;
@@ -72,11 +72,11 @@ input[type="text"]:focus {
 }
 
 #resultsTable {
- position: relative;
- width: inherit;
- cursor: pointer;
- font-weight: bold;
- font-size: medium;
+  position: relative;
+  width: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
 }
 
 #rating {
@@ -97,12 +97,15 @@ input[type="text"]:focus {
   text-align: right;
 }
 
+/* -------------==Map modal--------------------*/
 #mapModalClontainer {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
-  background: rgba(0,0,0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
+
 .mapModal {
   border: 2px solid #FF0000;
   max-width: 75%;
@@ -116,6 +119,7 @@ input[type="text"]:focus {
   background: #000;
   padding: 20px;
 }
+
 #closeBtnModal {
   position: absolute;
   padding: 10px;
@@ -132,3 +136,30 @@ input[type="text"]:focus {
   color: #000;
   background-color: #d3d3d3;
 }
+
+.containerHome {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .contactBtn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border: none;
+   font-weight: bold;
+   cursor: pointer;
+   text-transform: uppercase;
+   padding: 15px;
+   color: #fff;
+   transition: color 1000ms;
+   background-color: #000;
+   outline: 1px solid #fff;
+ }
+ .contactBtn:hover {
+   color: #000;
+   background-color: #d3d3d3;
+ }
