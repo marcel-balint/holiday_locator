@@ -1,8 +1,8 @@
 
-
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
+var image;
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
@@ -13,8 +13,12 @@ function initMap() {
     center: { lat: 48.020207, lng: 5.389587 },
     mapTypeControl: false,
     panControl: false,
-    zoomControl: false,
-    streetViewControl: false
+    zoomControl: true,
+    positionControlOptions: {
+      positions: google.maps.ControlPosition.RIGHT_CENTER
+    },
+    streetViewControl: false,
+    fullscreenControl: false
   });
 
   infoWindow = new google.maps.InfoWindow({
@@ -22,7 +26,7 @@ function initMap() {
   });
 
   // Create the autocomplete object and associate it with the UI input control.
-  // Restrict the search to the default country, and to place type "cities".
+  // and to place type "cities".
   autocomplete = new google.maps.places.Autocomplete(
     /** @type {!HTMLInputElement} */
     (
@@ -44,38 +48,55 @@ function onPlaceChanged() {
     map.setZoom(15);
     search();
   }
-  else {
-    document.getElementById('autocomplete').placeholder = 'Enter a city';
-  }
 }
 
-// Search for hotels in the selected city, within the viewport of the map.
+// Search for locations in the selected city, within the viewport of the map.
 function search() {
+  var locations = document.getElementById("locations").value;
   var search = {
     bounds: map.getBounds(),
-    types: ['lodging']
+    types: [locations]
   };
 
   places.nearbySearch(search, function(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
-      // Create a marker for each hotel found, and
-      // assign a letter of the alphabetic to each marker icon.
+  
       for (var i = 0; i < results.length; i++) {
-        var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-        var markerIcon = MARKER_PATH + markerLetter + '.png';
+
+        if (locations == "lodging") {
+          image = "assets/icons/hotel.png";
+        }
+        else if (locations == "bar") {
+          image = "assets/icons/bar.png";
+        }
+        else if (locations == "restaurant") {
+          image = "assets/icons/restaurant.png";
+        }
+        else if (locations == "store") {
+          image = "assets/icons/shop.png";
+        }
+        else if (locations == "museum") {
+          image = "assets/icons/museum.png";
+        }
+        else if (locations == "atm") {
+          image = "assets/icons/atm.png";
+        }
+        else if (locations == "park") {
+          image = "assets/icons/park_urban.png";
+        }
         // Use marker animation to drop the icons incrementally on the map.
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP,
-          icon: markerIcon
+          icon: image
         });
-        // If the user clicks a hotel marker, show the details of that hotel
+        // If the user clicks a marker, show the details 
         // in an info window.
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], 'click', showInfoWindow);
-        setTimeout(dropMarker(i), i * 100);
+        setTimeout(dropMarker(i), i * 10);
         addResult(results[i], i);
       }
     }
