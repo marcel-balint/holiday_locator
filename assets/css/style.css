@@ -159,7 +159,6 @@ input[type="text"]:focus {
    transition: color 1000ms;
    background-color: #000;
    outline: 1px solid #fff;
-   border-radius: 4px;
  }
  .contactBtn:hover {
    color: #000;
@@ -167,7 +166,7 @@ input[type="text"]:focus {
  }
  
  .modalContainer {
-
+  display: none;
    width: 100%;
    height: 100%;
    position: fixed;
@@ -267,4 +266,14 @@ input[type="text"]:focus {
    background: #d3d3d3;
    cursor: pointer;
    color: #000;
+ }
+ /*--------------Home page----------------*/
+ body {
+   background: url("../image/california.jpg");
+   z-index: -1000 !important;
+   position: static;
+   background-size: cover;
+   background-attachment: fixed;
+   overflow: hidden;
+   background-color: rgba(255, 255, 255, 0.4);
  }
