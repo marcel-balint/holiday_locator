@@ -7,10 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
 </head>
 
-<body>
+<body id="body">
   <header>
     <div class="containerHome">
       <button class="contactBtn" id="contactModal">Contact</button>
@@ -26,17 +25,17 @@
           </form>
         </div>
       </div>
-      <button class="pulse-button">Click here to find your destination</button>
+      <button class="pulse-button" onclick="appendModal();">Click here to find your destination</button>
     </div>
   </header>
   <div class="bgHome">
     <h2 class="h2">Holiday Locator</h2>
   </div>
 
-  <main>
-    <div id="mapModalClontainer">
+  <main id="main">
+    <div id="mapModalContainer">
       <div class="mapModal">
-        <button id="closeBtnModal">Close</button>
+        <button id="closeBtnModal" onclick="removeModal();">Close</button>
         <div id="locationField">
           <input id="autocomplete" placeholder="Enter a city" type="text" />
         </div>
