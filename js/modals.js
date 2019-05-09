@@ -37,3 +37,20 @@ function appendModal() {
 }
 
 window.addEventListener('load', removeModal);
+
+//Media queries---------------------------------
+
+ var listing = document.querySelector('#listing');
+ var widthListing = window.matchMedia("(max-width: 1300px)");
+ 
+ function hideListing(width) {
+     if(width.matches) {
+         listing.style.display = "none";
+     }else {
+         listing.style.display = "block";
+     }
+ }
+ 
+ hideListing(widthListing);
+ widthListing.addListener(hideListing);
+ 
