@@ -31,11 +31,14 @@
           </form>
         </div>
       </div>
-      <button class="pulse-button" onclick="appendModal();">Click here to find your destination</button>
+      <button class="pulse-button" onclick="appendModal();"><span class="red">Click here</span> to find your destination</button>
     </div>
   </header>
   <div class="bgHome">
     <h2 class="h2">Holiday Locator</h2>
+       <p>With this application you can find your next holiday destination city and point of interest in it. Click on the <span class="inline">button below</span>, 
+    a map will pop up, then type a destination city and select a location. Markers will be placed
+      on the map, each marker can be clicked to show basic information about the place.</p>
   </div>
 
   <main id="main">
@@ -91,8 +94,8 @@
         </div>
       </div>
     </div>
-  </main
-  <script src="sendEmail.js"></script>
+  </main>
+  <script src="js/sendEmail.js"></script>
   <script src="js/modals.js"></script>
   <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-o3Clh3NzoQKu6JMPq2tqFkyOzi2NLzs&libraries=places&callback=initMap" async defer></script>
