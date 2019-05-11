@@ -46,7 +46,7 @@ window.addEventListener('load', removeModal);
  function hideListing(width) {
      if(width.matches) {
          listing.style.display = "none";
-     }else {
+     } else {
          listing.style.display = "block";
      }
  }

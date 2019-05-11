@@ -1,3 +1,5 @@
+var emailjs;
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "marcel_balint", {
             "from_name": contactForm.name.value,

@@ -1,3 +1,4 @@
+
 #map {
   height: 100%;
 }
@@ -110,8 +111,6 @@ input[type="text"]:focus {
   font-family: Arial, sans-serif;
   line-height: 30px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 41px -12px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 41px -12px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px 41px -12px rgba(0, 0, 0, 0.9);
   background: #bebebe;
 }
@@ -361,7 +360,6 @@ p {
   font-weight: 300;
   padding: 10px;
   text-indent: 20px;
-  word-break: break-all;
   background-color: rgb(0, 0, 0, .2);
 }
 
@@ -414,7 +412,7 @@ p {
   }
 }
 
-/* -----------------------Medis queries----*/
+/* -----------------------Media queries-------------------*/
 @media(max-width: 850px) {
   #autocomplete {
     margin-top: 0;
@@ -435,6 +433,10 @@ p {
 @media(max-width: 550px) {
   .h2 {
     margin-bottom: 0;
+  }
+  .mapModal {
+    border: 1px solid #FF0000;
+    padding: 10px;
   }
 }
 @media(max-width: 500px) {
@@ -469,6 +471,9 @@ p {
   }
   .modalHeading {
     font-size: 26px;
+  }
+  p {
+    font-size: 23px;
   }
   .gm-style .gm-style-iw-c {
     max-width: 200px;
