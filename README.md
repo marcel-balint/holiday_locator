@@ -8,7 +8,7 @@
  related to the chosen location. When an icon is clicked, information about that location will be displayed.
 
 
-### UX
+## UX
 
 This website is intended for people who plan to go on vacation or for people whose job involve traveling,
 for example flight attendant. This type of user will want to know where places to stay and places to eat are,
@@ -33,7 +33,7 @@ visit.
 
 The wireframes for this website can be seen [here](https://github.com/marcel-balint/holiday_locator/tree/master/assets/wireframes).
 
-### Features
+## Features
 
 - The **Contact** button, located on the top-right side of the page:
    -  on hover, the button slowly transitions into a lightgray color and the text becomes black;
@@ -52,7 +52,7 @@ The wireframes for this website can be seen [here](https://github.com/marcel-bal
    - Icons - will drop on the map according to the chosen location, when clicked, each icon will display an _info window_ - allowing user to view the name of the establishment, address and telephone number;
    - Under the search bar, is displayed a list with the results of the search (if the screen is under 1300px, this list will hidden).
 
-### Technologies Used
+## Technologies Used
 
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML) - used for rendering the website.
@@ -63,11 +63,11 @@ The wireframes for this website can be seen [here](https://github.com/marcel-bal
 * [GitHub](https://github.com/) - the project uses GitHub to host website.
 
 
-### Testing
+## Testing
 This site was tested in google dev tools, responsiveness was tested to ensure that everything works well. 
 Also all features of the page are scaling as intended in tablet and mobile devices.
 
-I also tested mobile responsiveness on [this](https://varvy.com/mobile/) website. According to this, my website is 100/100 mobile friendly, [here]() are the results.
+I also tested mobile responsiveness on [this](https://varvy.com/mobile/) website. According to this, my website is 100/100 mobile friendly, [here](https://github.com/marcel-balint/holiday_locator/blob/master/assets/responsiveness/mobile_friendly.png) are the results.
 
 If you try to submit the contact form with an invalid email address, there will be a warning saying that the field is missing the '@' character.
 Furthermore, the ```required``` attribute is added to all fields of the contact form, so if those fields are not filled in,
@@ -81,7 +81,7 @@ Site was tested on the following browsers:
 * Mozilla Firefox
 * Microsoft Edge
 
-### Deployment
+## Deployment
 
 Created a new repository on GitHub then throughout the project commits were made (by using the terminal in Cloud9), after every important feature of the website.
 
@@ -97,21 +97,22 @@ To run locally, you can clone this repository directly into the editor by pastin
 ```git clone https://github.com/marcel-balint/holiday_locator.git``` into your terminal.
 
 
-### Credits
-##### Content
+## Credits
+#### Content
 Much of the ```main.js``` file  JavaScript code has been taken from the Google Maps JavaScript API Documentation,
 then, I modified the code (added, removed), according to my plans.
 
 
-##### Media
+#### Media
 
 * The background image was taken from [Pexels.com](https://www.pexels.com/).
  
 * The icons used on the map was taken from [Findicons.com](https://findicons.com/).
  
-##### Acknowledgements
+
+#### Acknowledgements
+
 * Google Maps Platform Documentation
-* Discord
 * Stack Overflow
 * [Code Institute](https://codeinstitute.net/) tutors
 
