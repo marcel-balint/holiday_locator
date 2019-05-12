@@ -21,7 +21,7 @@
       <button class="contactBtn" id="contactModal">Contact</button>
       <div class="modalContainer">
         <div class="modal">
-          <span class="close">close</span>
+          <span class="close">&times;</span>
           <h2 class="modalHeading">Enter your details</h2>
           <form onsubmit="return sendMail(this);" method="POST" id="usrform">
             <input type="text" class="inputMod" name="name" required placeholder="Full Name" /><br>
@@ -31,12 +31,12 @@
           </form>
         </div>
       </div>
-      <button class="pulse-button" onclick="appendModal();"><span class="red">Click here</span> to find your destination</button>
+      <button class="pulse-button" onclick="appendModal();">Click here to find your destination</button>
     </div>
   </header>
   <div class="bgHome">
     <h2 class="h2">Holiday Locator</h2>
-       <p>With this application you can find your next holiday destination city and point of interest in it. Click on the <span class="inline">button below</span>, 
+       <p>With this application you can find your next holiday destination city and point of interest in it. Click on the <i></i><strong>button below</strong></i>, 
     a map will pop up, then type a destination city and select a location. Markers will be placed
       on the map, each marker can be clicked to show basic information about the place.</p>
   </div>
@@ -46,7 +46,7 @@
       <div class="mapModal">
         <button id="closeBtnModal" onclick="removeModal();">Close</button>
         <div id="locationField">
-          <input id="autocomplete" placeholder="Enter a city" type="text" />
+          <input id="autocomplete" placeholder="Enter a destination city" type="text" />
         </div>
         <div id="floatingPanel" class="panel">
           <h1 class="header">Pick a location</h1>
