@@ -38,6 +38,7 @@ function appendModal() {
 
 window.addEventListener('load', removeModal);
 
+
 //Media queries---------------------------------
 
  var listing = document.querySelector('#listing');
