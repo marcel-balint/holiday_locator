@@ -1,4 +1,4 @@
-## Holyday Locator - Interactive Frontend Development Milestone Project
+## Holiday Locator - Interactive Frontend Development Milestone Project
  
  This is single page application which uses Google Maps API to allow users to search for their next holiday destination.
  The users can search for different cities all around the world and find
@@ -31,7 +31,7 @@ visit.
 
 7 If a traveler wants to know more about the culture of the city, he/she can find information about all museums of that particular city by checking their website.
 
-The wireframes for this website can be seen here.
+The wireframes for this website can be seen [here](https://github.com/marcel-balint/holiday_locator/tree/master/assets/wireframes).
 
 ### Features
 
@@ -53,3 +53,66 @@ The wireframes for this website can be seen here.
    - Under the search bar, is displayed a list with the results of the search (if the screen is under 1300px, this list will hidden).
 
 ### Technologies Used
+
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - used for rendering the website.
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - used to style the features of the website and to create responsiveness.
+* [JavaScript](https://www.javascript.com/)  - to execute different parts of Google map API code and DOM manipilation.
+* [Maps JavaScript API](https://cloud.google.com/maps-platform/) - allow users to search a city, auto complete their search queries, search for different location types and get establishment names, addresses, contact numbers and official websites.
+* [Cloud9 IDE](https://aws.amazon.com/cloud9/) - used to build this project.
+* [GitHub](https://github.com/) - the project uses GitHub to host website.
+
+
+### Testing
+This site was tested in google dev tools, responsiveness was tested to ensure that everything works well. 
+Also all features of the page are scaling as intended in tablet and mobile devices.
+
+I also tested mobile responsiveness on [this](https://varvy.com/mobile/) website. According to this, my website is 100/100 mobile friendly, [here]() are the results.
+
+If you try to submit the contact form with an invalid email address, there will be a warning saying that the field is missing the '@' character.
+Furthermore, the ```required``` attribute is added to all fields of the contact form, so if those fields are not filled in,
+the form will not submit. If all fields are valid, the form will be sent and the page will reload.
+
+All the links from the *Info Window* will open in a new tab using ```target="_blank"``` attribute.
+
+Site was tested on the following browsers:
+
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+
+### Deployment
+
+Created a new repository on GitHub then throughout the project commits were made (by using the terminal in Cloud9), after every important feature of the website.
+
+The HTML and CSS code passes the oficial validator with no issues.
+
+The JavaScript code passes trough [JSHint](https://jshint.com/) with no issues.
+
+There is no difference between the deployed version and the development version.
+
+The project has been deployed on GitHub Pages.
+
+To run locally, you can clone this repository directly into the editor by pasting
+```git clone https://github.com/marcel-balint/holiday_locator.git``` into your terminal.
+
+
+### Credits
+##### Content
+Much of the ```main.js``` file  JavaScript code has been taken from the Google Maps JavaScript API Documentation,
+then, I modified the code (added, removed), according to my plans.
+
+
+##### Media
+
+* The background image was taken from [Pexels.com](https://www.pexels.com/).
+ 
+* The icons used on the map was taken from [Findicons.com](https://findicons.com/).
+ 
+##### Acknowledgements
+* Google Maps Platform Documentation
+* Discord
+* Stack Overflow
+* [Code Institute](https://codeinstitute.net/) tutors
+
+
