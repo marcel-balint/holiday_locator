@@ -1,4 +1,6 @@
 ## Holiday Locator - Interactive Frontend Development Milestone Project
+
+A live demo can be found [here](https://marcel-balint.github.io/holiday_locator/).
  
  This is single page application which uses Google Maps API to allow users to search for their next holiday destination.
  The users can search for different cities all around the world and find
@@ -52,12 +54,15 @@ The wireframes for this website can be seen [here](https://github.com/marcel-bal
    - Icons - will drop on the map according to the chosen location, when clicked, each icon will display an _info window_ - allowing user to view the name of the establishment, address and telephone number;
    - Under the search bar, is displayed a list with the results of the search (if the screen is under 1300px, this list will hidden).
 
+#### Features Left to Implement
+* Display the weather forecast for the current position of the user;
+
 ## Technologies Used
 
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML) - used for rendering the website.
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - used to style the features of the website and to create responsiveness.
-* [JavaScript](https://www.javascript.com/)  - to execute different parts of Google map API code and DOM manipilation.
+* [JavaScript](https://www.javascript.com/)  - to execute different parts of Google Maps API code and DOM manipilation.
 * [Maps JavaScript API](https://cloud.google.com/maps-platform/) - allow users to search a city, auto complete their search queries, search for different location types and get establishment names, addresses, contact numbers and official websites.
 * [Cloud9 IDE](https://aws.amazon.com/cloud9/) - used to build this project.
 * [GitHub](https://github.com/) - the project uses GitHub to host website.
@@ -81,6 +86,7 @@ Site was tested on the following browsers:
 * Mozilla Firefox
 * Microsoft Edge
 
+In ```index.html``` file there is an inline style, (```display: none```), this is to prevent the map from flashing when the page is loading.
 ## Deployment
 
 Created a new repository on GitHub then throughout the project commits were made (by using the terminal in Cloud9), after every important feature of the website.
@@ -91,7 +97,7 @@ The JavaScript code passes trough [JSHint](https://jshint.com/) with no issues.
 
 There is no difference between the deployed version and the development version.
 
-The project has been deployed on GitHub Pages.
+The project has been deployed on [GitHub Pages](https://marcel-balint.github.io/holiday_locator/).
 
 To run locally, you can clone this repository directly into the editor by pasting
 ```git clone https://github.com/marcel-balint/holiday_locator.git``` into your terminal.
