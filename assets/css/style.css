@@ -163,15 +163,17 @@ select {
 
 #closeBtnModal {
   position: absolute;
-  padding: 10px;
+  padding: 4px;
   color: #fff;
-  top: -39px;
+  z-index: 3000;
+  top: 0;
   right: -1px;
   border: 0;
   text-transform: uppercase;
   background: 0;
   cursor: pointer;
   outline: 1px solid #fff;
+  background-color: #000;
 }
 
 #closeBtnModal:hover {
