@@ -29,6 +29,7 @@ var main = document.getElementById("main");
 
 function removeModal() {
     main.parentNode.removeChild(main);
+    main.style.display = "block";
 }
 
 function appendModal() {

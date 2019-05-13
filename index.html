@@ -40,8 +40,8 @@
     a map will pop up, then type a destination city and select a location. Markers will be placed
       on the map, each marker can be clicked to show basic information about the place.</p>
   </div>
-
-  <main id="main">
+    <!-- I had  to place the inline syle bolow otherwise the map modal flashes when page is loading even though I use CSS or JavaScript to hide it -->
+  <main id="main" style="display: none">
     <div id="mapModalContainer">
       <div class="mapModal">
         <button id="closeBtnModal" onclick="removeModal();">Close</button>
