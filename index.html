@@ -25,7 +25,7 @@
           <h2 class="modalHeading">Enter your details</h2>
           <form onsubmit="return sendMail(this);" method="POST" id="usrform">
             <input type="text" class="inputMod" name="name" required placeholder="Full Name" /><br>
-            <input type="email" class="inputMod" name="email" required placeholder="Email" /><br>
+            <input type="email" class="inputMod" name="email" placeholder="Email" required/><br>
             <textarea rows="3" cols="47" name="comment" form="usrform" class="textarea" placeholder="Enter your message..." required></textarea><br>
             <input type="submit" class="submitContact" value="Contact me" />
           </form>
@@ -40,6 +40,7 @@
     a map will pop up, then type a destination city and select a location. Markers will be placed
       on the map, each marker can be clicked to show basic information about the place.</p>
   </div>
+  <p class="success">Your message is successfully sent!</p>
     <!-- I had  to place the inline syle bolow otherwise the map modal flashes when page is loading even though I use CSS or JavaScript to hide it -->
   <main id="main" style="display: none">
     <div id="mapModalContainer">

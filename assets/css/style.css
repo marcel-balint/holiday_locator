@@ -1,4 +1,3 @@
-
 #map {
   height: 100%;
 }
@@ -14,7 +13,6 @@ body {
 table {
   font-size: 12px;
 }
-
 
 #listing {
   position: absolute;
@@ -148,7 +146,7 @@ select {
 }
 
 .mapModal {
-  border: 2px solid #FF0000;
+  border: 2px solid #ff0000;
   max-width: 75%;
   height: 75%;
   margin: auto;
@@ -299,15 +297,14 @@ textarea {
 }
 
 .close {
-    position: absolute;
-    font-weight: 900;
-    font-size: xx-large;
-    color: #fff;
-    top: -8px;
-    right: 1px;
-    cursor: pointer;
+  position: absolute;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #fff;
+  top: -8px;
+  right: 1px;
+  cursor: pointer;
 }
-
 
 /*--------------Home page----------------*/
 
@@ -351,7 +348,16 @@ p {
   font-weight: 300;
   padding: 10px;
   text-indent: 20px;
-  background-color: rgb(0, 0, 0, .2);
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.success {
+  display: none;
+  background-color: #32bb32;
+  text-align: center;
+  margin-top: 120px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .pulse-button {
@@ -364,14 +370,14 @@ p {
   height: 90px;
   font-size: 17px;
   font-weight: bold;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
   border: none;
   background: #008489;
   cursor: pointer;
-  box-shadow: 0 0 0 0px rgba(90, 153, 212, .5);
+  box-shadow: 0 0 0 0px rgba(90, 153, 212, 0.5);
   animation: pulse 1.2s infinite;
 }
 
@@ -382,20 +388,20 @@ p {
 
 @keyframes pulse {
   0% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
   }
   100% {
-    transform: scale(.9);
+    transform: scale(0.9);
     box-shadow: 0 0 0 0px rgba(90, 153, 212, 0);
   }
 }
 
 /* -----------------------Media queries-------------------*/
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   #autocomplete {
     margin-top: 0;
     margin-bottom: 100px;
@@ -412,16 +418,16 @@ p {
     clear: both;
   }
 }
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   .h2 {
     margin-bottom: 0;
   }
   .mapModal {
-    border: 1px solid #FF0000;
+    border: 1px solid #ff0000;
     padding: 10px;
   }
 }
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   #autocomplete {
     max-width: 200px;
   }
@@ -441,7 +447,7 @@ p {
     font-size: 14px;
   }
 }
-@media(max-width: 350px) {
+@media (max-width: 350px) {
   #autocomplete {
     max-width: 150px;
   }

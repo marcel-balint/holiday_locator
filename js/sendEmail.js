@@ -11,6 +11,12 @@ function sendMail(contactForm) {
       function(response) {
         console.log("SUCCESS", response);
         clear();
+        if (response.status === 200) {
+          document.querySelector(".success").style.display = "block";
+        }
+        setTimeout(function() {
+          document.querySelector(".success").style.display = "none";
+        }, 3500);
       },
       function(error) {
         console.log("FAILED", error);
