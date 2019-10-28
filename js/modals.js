@@ -4,8 +4,8 @@ var floatingPanel = document.querySelector("#floatingPanel");
 var locationField = document.querySelector("#locationField");
 var closeBtn = document.querySelector(".close");
 
-var testt = document.querySelector(".submitContact");
-testt.addEventListener("click", function() {
+var modalCloseBtn = document.querySelector(".submitContact");
+modalCloseBtn.addEventListener("click", function() {
   modalContainer.style.display = "none";
 });
 
