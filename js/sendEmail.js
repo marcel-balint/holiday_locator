@@ -10,9 +10,14 @@ function sendMail(contactForm) {
     .then(
       function(response) {
         console.log("SUCCESS", response);
+        clear();
       },
       function(error) {
         console.log("FAILED", error);
       }
     );
+  return false;
+}
+function clear() {
+  document.getElementById("usrform").reset();
 }
