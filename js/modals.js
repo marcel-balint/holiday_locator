@@ -4,11 +4,6 @@ var floatingPanel = document.querySelector("#floatingPanel");
 var locationField = document.querySelector("#locationField");
 var closeBtn = document.querySelector(".close");
 
-var modalCloseBtn = document.querySelector(".submitContact");
-modalCloseBtn.addEventListener("click", function() {
-  modalContainer.style.display = "none";
-});
-
 contactBtn.addEventListener("click", function() {
   modalContainer.style.display = "block";
   modalContainer.style.zIndex = "5";
